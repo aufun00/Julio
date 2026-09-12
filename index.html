@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrical Estimate Review</title>
+  <style>
+    :root { font-family: Arial, Helvetica, sans-serif; color: #1f2937; background: #f3f4f6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; }
+    main { width: min(1100px, 100%); margin: 0 auto; }
+    h1 { margin: 0 0 6px; font-size: 1.55rem; }
+    .subtitle { margin: 0 0 18px; color: #6b7280; font-size: .92rem; }
+    .table-wrap { overflow-x: auto; background: #fff; border: 1px solid #d1d5db; border-radius: 10px; box-shadow: 0 2px 8px rgb(0 0 0 / 5%); }
+    table { width: 100%; min-width: 760px; border-collapse: collapse; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid #e5e7eb; vertical-align: middle; }
+    th { position: sticky; top: 0; z-index: 1; background: #263746; color: #fff; font-size: .83rem; letter-spacing: .02em; text-align: center; }
+    td:nth-child(1), td:nth-child(3) { text-align: center; white-space: nowrap; }
+    td:nth-child(4), td:nth-child(5) { text-align: right; white-space: nowrap; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .quote td { padding: 8px 12px; background: #eef1f4; color: #4b5563; font-size: .82rem; font-style: italic; text-align: left; }
+    .group-start td { border-top: 3px solid #fff; }
+    .pending { color: #9a6700; font-weight: 700; }
+    .canceled { color: #6b7280; text-decoration: line-through; }
+    a { color: #075e9e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 700px) { body { padding: 12px; } h1 { font-size: 1.3rem; } .table-wrap { border-radius: 8px; } th, td { padding: 9px 10px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Electrical Estimate Review</h1>
+    <p class="subtitle">10167 C.E. — Julio</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Index</th><th>Content</th><th>Qty</th><th>Labor</th><th>Material</th></tr></thead>
+        <tbody>
+          <tr class="quote"><td colspan="5">1 — Wiring 5 Cat6A runs: 3 for APs and 2 for data; 4 × $385 + 1 × $485 = $2,025</td></tr>
+          <tr><td>1</td><td>1.1 Closet → Dual-port RJ45 wall outlet</td><td>2</td><td>$385</td><td></td></tr>
+          <tr><td></td><td>1.2 Closet → Office AP, Living AP</td><td>2</td><td>$385</td><td></td></tr>
+          <tr><td></td><td>1.3 Closet → Casita AP</td><td>1</td><td>$485</td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">2 — Cat6A wire material: $375</td></tr>
+          <tr><td>2</td><td>for 1.1 <a href="https://us.infinitecables.com/products/rj45-to-blunt-cat6a-solid-utp-pigtail-cable-molded-style-boot-cmr-ft4?variant=51322673496377">RJ45 to Blunt CAT6A Solid UTP Pigtail Cable</a></td><td>2</td><td></td><td class="pending">need length</td></tr>
+          <tr><td></td><td>for 1.1 <a href="https://us.infinitecables.com/products/rj45-cat6a-slim-profile-jack-110-punch-down">RJ45 Cat6a Slim Profile Jack</a></td><td>2</td><td></td><td></td></tr>
+          <tr><td></td><td>for 1.2 <a href="https://us.infinitecables.com/products/rj45-cat6a-plenum-utp-solid-patch-cable-cmp-ft6?variant=51318185591097">RJ45 CAT6A Plenum UTP Solid Patch Cable</a></td><td>2</td><td></td><td class="pending">need length</td></tr>
+          <tr><td></td><td>for 1.3 <a href="https://us.infinitecables.com/products/rj45-cat6a-plenum-utp-solid-patch-cable-cmp-ft6?variant=51318185591097">RJ45 CAT6A Plenum UTP Solid Patch Cable</a></td><td>1</td><td></td><td class="pending">need length</td></tr>
+          <tr class="quote group-start"><td colspan="5">3 — One 16-port 2.5 Gb PoE switch: $600</td></tr>
+          <tr><td>3</td><td><a href="https://store.ui.com/us/en/category/switching-utility/products/usw-flex-2-5g-8-poe?variant=usw-flex-2dot5g-8-poe">UniFi 8-port 2.5 GbE PoE++ switch — Flex 2.5G PoE</a></td><td>1</td><td></td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">4 — Three TP-Link APs: 3 × $150 = $450</td></tr>
+          <tr><td>4</td><td><a href="https://store.ui.com/us/en/category/wifi-flagship/products/u7-pro-max?variant=u7-pro-max-us">UniFi ceiling-mounted WiFi 7 AP — U7 Pro Max</a></td><td>3</td><td></td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">5 — One PoE installation: $285</td></tr>
+          <tr><td>5</td><td class="pending">?</td><td></td><td></td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">6 — Install three TP-Link APs: $555</td></tr>
+          <tr><td>6</td><td>AP Install</td><td>1</td><td>$555</td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">7 — Install one 75-foot HDMI 2.1 8K 48 Gbps cable: $385</td></tr>
+          <tr><td>7</td><td>HDMI AOC</td><td>1</td><td>$385</td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">8 — One 75-foot HDMI 2.1 8K 48 Gbps cable: $150</td></tr>
+          <tr><td>8</td><td><a href="https://us.infinitecables.com/products/aoc-2-1-active-optical-cable-hdmi-high-speed-8k-60hz-48gbps-uhd-hdr-cable-cmp-plenum-rated">HDMI AOC Cable</a></td><td>1</td><td></td><td class="pending">need length</td></tr>
+          <tr class="quote group-start"><td colspan="5">9–14 — Exhaust fans, bidet outlets, timers and laundry smart switch</td></tr>
+          <tr><td>9</td><td>Toilet Exhaust Fans Replacement</td><td>3</td><td>$485</td><td></td></tr>
+          <tr><td>10</td><td>Fans <a href="https://www.homedepot.com/p/Panasonic-WhisperFit-DC-Pick-A-Flow-50-80-110-CFM-ENERGY-STAR-Quiet-Ceiling-Bathroom-Exhaust-Fan-w-Flex-Z-Fast-Install-Bracket-FV-0511VF1/317645776">Panasonic WhisperFit FV-0511VF1</a></td><td>3</td><td></td><td>$136</td></tr>
+          <tr><td>12</td><td>Fans Switch <a href="https://www.homedepot.com/p/Leviton-Decora-15A-60-Minute-Indoor-In-Wall-Countdown-Timer-Switch-1-2-HP-9-8A-Fan-Motor-No-Neutral-Required-Single-Pole-White-R02-DT160-0LW/325797188">Leviton Decora 15A DT160-1LW</a></td><td>3</td><td></td><td>$25</td></tr>
+          <tr><td>11</td><td>Outlets Wired For bidets (Protected by GFCI)</td><td>3</td><td>$385</td><td></td></tr>
+          <tr><td></td><td>Mainbath Exhaust Fan Switch Replacement</td><td>1</td><td class="pending">?</td><td></td></tr>
+          <tr><td></td><td>Mainbath Fan Switch <a href="https://www.homedepot.com/p/Leviton-Decora-15A-60-Minute-Indoor-In-Wall-Countdown-Timer-Switch-1-2-HP-9-8A-Fan-Motor-No-Neutral-Required-Single-Pole-White-R02-DT160-0LW/325797188">Leviton Decora 15A DT160-1LW</a></td><td>1</td><td></td><td>$25</td></tr>
+          <tr><td></td><td>Laundry Exhaust Fan Switch Replacement</td><td>1</td><td class="pending">?</td><td></td></tr>
+          <tr><td></td><td>Laundry Fan Switch <a href="https://www.homedepot.com/p/Leviton-Decora-15Amp-Smart-Light-Switch-White-Wi-Fi-On-Off-Control-Lights-Fans-Gen-Use-3A-LED-1-3-HP-Neutral-Req-D315S-1RW-D315S-1RW/340553852">Leviton Decora 15A D315S-1RW</a></td><td>1</td><td></td><td>$39</td></tr>
+          <tr><td></td><td>Towel Warmer Installation</td><td>1</td><td class="pending">?</td><td></td></tr>
+          <tr><td></td><td>Towel Warmer — WarmlyYours Rome 10</td><td>1</td><td></td><td></td></tr>
+          <tr><td></td><td>Towel Warmer Switch <a href="https://www.homedepot.com/p/Leviton-Decora-15A-60-Minute-Indoor-In-Wall-Countdown-Timer-Switch-1-2-HP-9-8A-Fan-Motor-No-Neutral-Required-Single-Pole-White-R02-DT160-0LW/325797188">Leviton Decora 15A DT160-1LW</a></td><td>1</td><td></td><td>$25</td></tr>
+          <tr><td></td><td>Office Outlet Continuous Power</td><td>1</td><td class="pending">?</td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">15 — TV mount, outlet wiring and HDMI: $550</td></tr>
+          <tr><td>15</td><td class="canceled">Canceled</td><td></td><td></td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">16 — NEMA 50A EV charger outlet near panel: $885</td></tr>
+          <tr><td>16</td><td>Tesla Wall Connector Hardwired Installation</td><td>1</td><td class="pending">?</td><td></td></tr>
+          <tr><td></td><td>Tesla Wall Connector</td><td>1</td><td></td><td></td></tr>
+          <tr class="quote group-start"><td colspan="5">17 — Troubleshoot guest-bedroom breaker: $385</td></tr>
+          <tr><td>17</td><td class="canceled">Canceled</td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
