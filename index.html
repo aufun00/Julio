@@ -24,7 +24,19 @@
     .canceled { color: #6b7280; text-decoration: line-through; }
     a { color: #075e9e; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    @media (max-width: 700px) { body { padding: 12px; } h1 { font-size: 1.3rem; } .table-wrap { border-radius: 8px; } th, td { padding: 9px 10px; } }
+    @media (max-width: 700px) {
+      body { padding: 0; }
+      h1 { margin: 12px 6px 4px; font-size: 1.2rem; }
+      .subtitle { margin: 0 6px 10px; font-size: .8rem; }
+      .table-wrap { overflow-x: hidden; border-right: 0; border-left: 0; border-radius: 0; box-shadow: none; }
+      table { min-width: 0; table-layout: fixed; }
+      th, td { padding: 6px 3px; font-size: .74rem; overflow-wrap: anywhere; }
+      th:nth-child(1), td:nth-child(1) { width: 30px; }
+      th:nth-child(3), td:nth-child(3) { width: 30px; }
+      th:nth-child(4), td:nth-child(4),
+      th:nth-child(5), td:nth-child(5) { width: 56px; }
+      .quote td { padding: 6px 4px; font-size: .7rem; }
+    }
   </style>
 </head>
 <body>
